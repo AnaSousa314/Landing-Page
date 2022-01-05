@@ -16,6 +16,8 @@ body{
   font-family: 'DM Sans', sans-serif;
   font-size: 18px;
 
+  height: auto;
+
   background-color: var(--background-color);
 }
 
@@ -35,6 +37,10 @@ body{
 
 .font-color-gray{
   color: var(--second-font-color);
+}
+
+.font-color-white{
+  color: var(--primary-font-color);
 }
 
 .topo{
@@ -114,4 +120,46 @@ body{
 
 .avatar{
   width: 300px;
+}
+
+
+.sobre{
+  margin-top: 160px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sobre div h1{
+  font-size: 32px;
+}
+
+.contacts{
+  width: 842px;
+  margin-top:85px;
+  width: 842px;
+}
+
+.contacts ul{
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+
+  list-style: none;
+}
+
+.contacts ul li span:first-of-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 62px;
+  height: 62px;
+
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.contacts ul li span i{
+  color: var(--bg-color);
 }
