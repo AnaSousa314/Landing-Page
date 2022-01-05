@@ -1,6 +1,8 @@
 :root{
   --background-color: #171717;
-  --font-color: #f9f9f9;
+  --primary-font-color: #f9f9f9;
+  --second-font-color: #828282;
+  --bg-color: #1E90FF;
   --primary-color: #FFA726;
 }
 
@@ -31,6 +33,10 @@ body{
   padding-right: 45px;
 }
 
+.font-color-gray{
+  color: var(--second-font-color);
+}
+
 .topo{
   display: flex;
   justify-content: space-between;
@@ -39,7 +45,7 @@ body{
 
   width: 900px;
 
-  color: var(--font-color);
+  color: var(--primary-font-color);
 }
 
 .topo span{
@@ -48,13 +54,17 @@ body{
 }
 
 .topo a{
-  color: var(--font-color);
+  color: var(--primary-font-color);
   text-decoration: none;
 }
 
-.menu{
+.menu ul{
   display: flex;
   width: 469px;
+}
+
+.menu li{
+  list-style: none;
 }
 
 .nome{
@@ -65,7 +75,41 @@ body{
 
 .nome h1{
   width: 221px;
-  color: var(--font-color);
+  color: var(--primary-font-color);
+}
+
+.nome-pro{
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.nome-botoes{
+  width: 337px;
+  height: auto;
+}
+
+.nome-botoes span{
+  padding-right: 15px;
+}
+
+.nome-botoes span a {
+  width: 143px;
+  height: 42px;
+  font-size: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-font-color);
+
+}
+
+.nome-botoes .cv{
+  background-color: var(--bg-color);
+}
+
+.nome-botoes .contact{
+  border: 1px solid var(--second-font-color);
 }
 
 .avatar{
