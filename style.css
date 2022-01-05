@@ -1,0 +1,73 @@
+:root{
+  --background-color: #171717;
+  --font-color: #f9f9f9;
+  --primary-color: #FFA726;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+
+  background-color: var(--background-color);
+}
+
+.container{
+  max-width: 900px;
+  margin: auto;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.p-right{
+  padding-right: 45px;
+}
+
+.topo{
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 40px;
+
+  width: 900px;
+
+  color: var(--font-color);
+}
+
+.topo span{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.topo a{
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.menu{
+  display: flex;
+  width: 469px;
+}
+
+.nome{
+  margin-top: 116px;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.nome h1{
+  width: 221px;
+  color: var(--font-color);
+}
+
+.avatar{
+  width: 300px;
+}
