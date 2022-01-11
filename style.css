@@ -235,3 +235,35 @@ body{
 .cards .card .card-content div{
   margin-top: 23px;
 }
+
+.servicos h1{
+  text-align: center;
+  font-size: 32px;
+}
+
+.servicos .cards .card{
+  align-items: flex-start;
+  padding-left: 30px;
+
+  border-bottom: 5px solid var(--bg-color);
+}
+
+.servicos .cards .card .card-content{
+  align-items: flex-start;
+}
+
+.servicos .cards .card .card-content i{
+  font-size: 56px;
+  color: var(--bg-color);
+  
+}
+
+.servicos .cards .card .card-content div{
+
+  width: 126px;
+}
+
+.servicos .cards .card .card-content h1{
+  font-size: 32px;
+  text-align: left;
+}
