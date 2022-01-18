@@ -18,7 +18,7 @@
   <title>Ana Sousa</title>
 </head>
 <body>
-    <header class="container d-flex">
+    <header class="container d-flex" id="topi">
       <section class="topo">
         <span>Portifólio</span>
         <nav class="menu">
@@ -42,6 +42,13 @@
         </nav>
       </section>
     </header>
+    <section>
+      <!--<a href="#topi">-->
+      <div id="top" onclick="topo()">
+          <i class="fas fa-arrow-up"></i>
+      </div>
+      <!--</a>-->
+    </section>
 
     <main class="container">
       <section class="nome d-flex">
@@ -70,11 +77,6 @@
         </div>
       </section>
 
-      <section>
-        <div id="top">
-          
-        </div>
-      </section>
 
       <section class="sobre d-flex" id="sobre">
         <div>
@@ -311,5 +313,7 @@
     <footer>
       <p>Built by <span>Ana Sousa</span>. ©2022 </p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
