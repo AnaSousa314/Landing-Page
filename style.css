@@ -2,7 +2,7 @@
   --background-color: #171717;
   --primary-font-color: #f9f9f9;
   --second-font-color: #828282;
-  --bg-color: #1E90FF;
+  --bg-color: rgb(30, 144, 255);
   --primary-color: #FFA726;
   --card-color: #212121;
 }
@@ -236,6 +236,10 @@ body{
   margin-top: 23px;
 }
 
+.servicos{
+  margin-top: 127px;
+}
+
 .servicos h1{
   text-align: center;
   font-size: 32px;
@@ -259,11 +263,50 @@ body{
 }
 
 .servicos .cards .card .card-content div{
-
   width: 126px;
 }
 
 .servicos .cards .card .card-content h1{
   font-size: 32px;
   text-align: left;
+}
+
+.skills{
+  margin-top: 127px;
+}
+
+.skills h1{
+  text-align: center;
+  font-size: 32px;
+}
+
+.skills .cards{
+  flex-wrap: wrap;
+}
+
+.skills .cards .card{
+  width: 150px;
+  height: 150px;
+
+  margin-right: 30px;
+}
+
+.skills .cards .card .card-content i{
+  font-size: 56px;
+  color: var(--bg-color);
+  
+}
+
+.skills .cards .card .card-content #mysql{
+  width: 100px;
+  height: 100px;
+}
+
+.skills .cards .card .card-content #postegree{
+  width: 70px;
+  height: 70px;
+}
+
+.skills .cards .card .card-content #typescript{
+  width: 52px;
 }
