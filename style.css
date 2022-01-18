@@ -310,3 +310,17 @@ body{
 .skills .cards .card .card-content #typescript{
   width: 52px;
 }
+
+footer{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-color);
+
+  color: var(--primary-font-color);
+}
+
+footer p span{
+  color: var(--bg-color);
+}
