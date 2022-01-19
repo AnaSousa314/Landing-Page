@@ -379,8 +379,8 @@ footer p span{
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 600px;
-  right: 30px;
+  top: 580px;
+  right: 90px;
 
   color: white;
   position: fixed;
@@ -401,4 +401,39 @@ footer p span{
   100%{
     transform: translateY(15px);
   }
+}
+
+
+.flip-container{
+  perspective: 1000;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {  		
+  transform: rotateY(180deg);  	
+}  
+
+.flipper {  	
+  transition: 0.6s;  	
+  transform-style: preserve-3d;    	
+  position: relative;  
+}
+    
+.front, .back {  	
+  backface-visibility: hidden;    	
+  position: absolute;  	
+  /* top: 0;  	
+ left: 0;   */
+}
+    
+.front { z-index: 2;  }    
+
+.back { 
+  transform: rotateY(180deg); 
+  text-align: center;
+}
+
+.back a{ 
+  text-decoration: none;
+  color: var(--bg-color);
+  font-weight: bold;
 }
