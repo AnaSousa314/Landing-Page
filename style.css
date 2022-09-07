@@ -5,6 +5,7 @@
   --bg-color: rgb(30, 144, 255);
   --primary-color: #FFA726;
   --card-color: #212121;
+  --border-color: #333;
 }
 
 *{
@@ -185,10 +186,11 @@ body{
   list-style: none;
 }
 
-.contacts ul li{
+.contacts ul li a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
 }
 
 .contacts ul li span:first-of-type{
@@ -246,7 +248,7 @@ body{
   margin-bottom: 30px;
 
   background-color: var(--card-color);
-  border: 1px solid #333;
+  border: 1px solid var(--border-color);
 }
 
 
@@ -311,11 +313,13 @@ body{
   text-align: left;
 }
 
-.skills{
+.skills, .contact-form{
   margin-top: 127px;
 }
 
-.skills h1{
+.skills h1,
+.contact-form h1
+{
   text-align: center;
   font-size: 32px;
 }
@@ -357,6 +361,50 @@ body{
 
 .skills .cards .card .card-content #typescript{
   width: 52px;
+}
+
+.contact-form{
+  margin-bottom: 30px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contact-form h1{
+  margin-bottom: 30px;
+}
+
+.contact-form section{
+  /* height: 450px; */
+  width: 500px;
+
+  background-color: var(--card-color);
+  color: var(--primary-font-color);
+  border-radius: 10px;
+
+  border: 1px solid var(--border-color);
+}
+
+.contact-form section form{
+  padding: 50px;
+}
+
+.contact-form .contact-form-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form-data label{
+  margin-bottom: 5px;
+}
+
+.contact-form-data input{
+  margin-bottom: 15px;
+  height: 40px;
 }
 
 footer{
